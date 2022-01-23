@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="index.css" rel="stylesheet">
+</head>
+
+<body class="body_oferta">
+    <div class="wrapper">
+        <div class="wrapper__title">
+            <a href="index.html" class="title">
+                <h1>PRZEWODNIK TURYSTYCZNY</h1>
+            </a>
+
+        </div>
+        <nav class="wrapper__nav">
+            <ul class="nav__list">
+                <li class="nav__list-item"><img src="Alone-amico.svg"></li>
+                <li class="nav__list-item"><a href="index.html">Główna</a></li>
+                <li class="nav__list-item"><a href="cennik.html">Cennik</a></li>
+                <li class="nav__list-item"><a href="gallery.html">Galeria</a></li>
+                <li class="nav__list-item"><a href='pogoda.html'>Pogoda</a> </li>
+                <li class="nav__list-item"><button data-modal-target="#modal" class="kontakt">Kontakt</button> </li>
+
+            </ul>
+        </nav>
+        <div class="wrapper-oferta">
+            <div class="oferta">
+                <div class="tytul">
+                    <div id="nazwa1">Zwiedzanie Zakopanego</div>
+                    <img id="mapa1" src="zakop.png">
+                </div>
+                <div class="text">
+                    <p>Zakopane to niewielkie miasto położone u Podnóża Tatr. To niespełna 30 - tysięczne miasto co roku przyciąga rzesze turystów pragnących poczuć klimat tego miejsca. Przy najpopularniejszej ulicy Krupówki znajdują się sklepy, kawiarnie
+                        i bary. Natomiast pod Gubałówą kramy i stoiska z lokalnymi wyrobami. Ciekawym i urokliwym miejscem jakiwe warto zobaczyć jest Kaplica w Jaszczurówce - jako zabytek jest idealnym przykładem Stylu Zakopiańskiego. Równie pięknym miejscem
+                        jest Czerwony Dwór wybudowany w 1902 roku. W latach 1918-1919 mieszkał w nim Stefan Żeromski, pisarz silnie związany z Zakopanem. Będąc w tym miescie koniecznie trzeba także zobaczyć Wielka Krokiew - najwieksza skocznie narciarską
+                        w Polsce.</p>
+                </div>
+            </div>
+            <div class="oferta">
+                <div class="tytul">
+                    <div id="nazwa1">Trasa z Siwej Polany</div>
+                    <img id="mapa1" src="siwa.png">
+                </div>
+                <div class="text">
+                    <p>Trasa rozpoczyna swój bieg od Parkingu przy Siwej Polanie i prowadzi łagodną drogą aż do Schroniska przy Dolonie Chochołowskiej. Po około 1.5h wędrówki od startu możemy już podziwiać piękne szczyty Tatr Zachodnich. Od Schroniska, które
+                        jest jedynym schroniskiem na tej trasie - zaczynamy zielonym szlakiem wspinać się na Wołowiec. Z Wołowca rozpościera się piękny widok na Rochacze. Od tego momentu poruszamy się czerwonym szlakiem przez Łopate, Jarząbczy Wierch
+                        (podejście na niego wymaga w miarę dobrej kondycji) i Kończysty Wierch, który kończy naszą trasę. Od tego momentu schodzimy w niższe partie i powoli wracamy na parking.
+                    </p>
+                </div>
+            </div>
+            <div class="oferta">
+                <div class="tytul">
+                    <div id="nazwa1">Trasa przez Morskie Oko</div>
+                    <img id="mapa1" src="morskie_oko.png">
+                </div>
+                <div class="text">
+                    <p>Trasa rozpoczyna się na parkingu w Palenicy Białczańskiej, miejsce parkingowe należy wcześniej zarezerować ponieważ jest to dość popularne miejsce, w czasie weekendu nie ma szans na znalezienie wolnego miejsca bez wczesniejszej rezerwacji.
+                        Od parkingu kierujemy się drogą asfaltową - szlakiem czerwonym aż do skrzyżowania z zielonym. Następnie idziemy zielonym do Doliny Pięciu Stawów Polski, gdzie oprócz stawów możemy zobaczyć Siklawę - najwiekszy wodospad Tatr, a
+                        także Polski. Następnie żóltym szlakiem kierujemy się na najwyższy szczyt naszej wycieczki - Szpiglasowy Wierch, podejście na niego jest stromie, a miejscami możemy spotkać łańcuchy. Po zdobyciu tego szczytu kierujemy się już w
+                        dół żółtym szlakiem do Morskiego Oka (na tym odcinku często można spotkać kozice lub świstaki, warto ich wypatrywać :) ). Po zejściu do Morskiego Oka, już cały czas będziemy szli czerwonym szlakiem, do miejsca startu.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="modal" id="modal">
+            <div class="modal-header">
+                <div class="title"> Formularz zgłoszeniowy</div>
+                <button data-close-button class="close-button">&times;</button>
+            </div>
+            <div class="modal-body">
+                <section id="index-modal" , class="wrapper-modal">
+                    <input type="text" placeholder="Imie" id="fname" required>
+                    <input type="text" placeholder="Nazwisko" id="fsurname" required>
+                    <input type="text" placeholder="Numer telefonu lub email" id="femail" required>
+                    <label for="date">DATA URODZENIA</label>
+                    <input type="date" id="fdate" name="fname" required>
+                    <button turn-off class="send-button">WYŚLIJ</button>
+                </section>
+            </div>
+        </div>
+        <div id="overlay"></div>
+        <script src="skrypt.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="index.css" rel="stylesheet">
+</head>
+
+<body class="cennik">
+    <div class="wrapper">
+        <div class="wrapper__title">
+            <a href="index.html" class="title">
+                <h1>PRZEWODNIK TURYSTYCZNY</h1>
+            </a>
+
+        </div>
+        <nav class="wrapper__nav">
+            <ul class="nav__list">
+                <li class="nav__list-item"><img src="Alone-amico.svg"></li>
+                <li class="nav__list-item"><a href="index.html">Główna</a></li>
+                <li class="nav__list-item"><a href="oferta.html">Oferta</a></li>
+                <li class="nav__list-item"><a href="gallery.html">Galeria</a></li>
+                <li class="nav__list-item"><a href='pogoda.html'>Pogoda</a> </li>
+                <li class="nav__list-item"><button data-modal-target="#modal" class="kontakt">Kontakt</button> </li>
+
+            </ul>
+        </nav>
+    </div>
+    <div class=tables>
+        <div class=table>
+            <div class=tableTitle>WYCIECZKI GÓRSKIE</div>
+            <table class="styled-table">
+                <thead>
+                    <tr>
+                        <th>Rodzaj wycieczki</th>
+                        <th>Turyści idywidualni</th>
+                        <th>Grupy</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="nrow">
+                        <td>Zwiedzanie do 3h</td>
+                        <td>300 zł</td>
+                        <td>400 zł</td>
+                    </tr>
+                    <tr class="row">
+                        <td>Zwiedzianie do 5h</td>
+                        <td>380 zł</td>
+                        <td>480 zł</td>
+                    </tr>
+                    <tr class="nrow">
+                        <td>Każda kolejna godzina</td>
+                        <td>50 zł</td>
+                        <td>60 zł</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class=table>
+            <div class=tableTitle>ZAKOPANE I OKOLICE</div>
+            <table class="styled-table">
+                <thead>
+                    <tr>
+                        <th>Rodzaj wycieczki</th>
+                        <th>Turyści idywidualni</th>
+                        <th>Grupy</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="nrow">
+                        <td>Zwiedzanie do 3h</td>
+                        <td>250 zł</td>
+                        <td>350 zł</td>
+                    </tr>
+                    <tr class="row">
+                        <td>Zwiedzianie do 5h</td>
+                        <td>350 zł</td>
+                        <td>450 zł</td>
+                    </tr>
+                    <tr class="nrow">
+                        <td>Każda kolejna godzina</td>
+                        <td>40 zł</td>
+                        <td>50 zł</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <div class="modal" id="modal">
+        <div class="modal-header">
+            <div class="title"> Formularz zgłoszeniowy</div>
+            <button data-close-button class="close-button">&times;</button>
+        </div>
+        <div class="modal-body">
+            <section id="index-modal" , class="wrapper-modal">
+                <input type="text" placeholder="Imie" id="fname" required>
+                <input type="text" placeholder="Nazwisko" id="fsurname" required>
+                <input type="text" placeholder="Numer telefonu lub email" id="femail" required>
+                <label for="date">DATA URODZENIA</label>
+                <input type="date" id="fdate" name="fname" required>
+                <button turn-off class="send-button">WYŚLIJ</button>
+            </section>
+        </div>
+    </div>
+    <div id="overlay"></div>
+    <script src="skrypt.js"></script>
+</body>
+
+</html>
